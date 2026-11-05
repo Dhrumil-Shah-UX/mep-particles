@@ -82,6 +82,7 @@ const DPR_CAP   = 1.75;
 const canvas   = document.getElementById('app');
 const dpr      = Math.min(DPR_CAP, Math.max(1, window.devicePixelRatio||1));
 const renderer = new THREE.WebGLRenderer({ canvas, antialias:true, alpha:true });
+renderer.setClearColor(0x000000, 0);
 renderer.setPixelRatio(dpr);
 const scene  = new THREE.Scene();
 const camera = new THREE.OrthographicCamera();
